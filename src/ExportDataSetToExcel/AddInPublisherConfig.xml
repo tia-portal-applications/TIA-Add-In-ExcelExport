@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PackageConfiguration xmlns=
+"http://www.siemens.com/automation/Openness/AddIn/Publisher/V17">
+  <Author>Siemens AG - SIMATIC Systems Support</Author>
+  <Description>This TIA Add-In provides to export tag table dataset to excel file</Description>
+  <AddInVersion>V1.0.0</AddInVersion>
+  <Product>
+    <Name>Export Tag Table Dataset to Excel</Name>
+    <Id>123456789</Id>
+    <Version>1.0.0</Version>
+  </Product>
+  <DisplayInMultiuser/>
+  <FeatureAssembly>
+    <AssemblyInfo>
+      <Assembly>ExportDataSetToExcel.dll</Assembly>
+    </AssemblyInfo>
+  </FeatureAssembly>
+  <RequiredPermissions>
+    <TIAPermissions>
+      <TIA.ReadWrite />
+    </TIAPermissions>
+    <SecurityPermissions>
+		<System.Security.Permissions.SecurityPermission.UnmanagedCode/>
+		<System.Security.Permissions.FileDialogPermission/>
+		<System.Security.Permissions.UIPermission/>
+		<Siemens.Engineering.AddIn.Permissions.ProcessStartPermission/>
+		<System.Security.Permissions.StorePermission/>
+		<System.Security.Permissions.FileIOPermission/>
+		<System.Security.Permissions.EnvironmentPermission/>
+	</SecurityPermissions>
+  </RequiredPermissions>
+</PackageConfiguration>
